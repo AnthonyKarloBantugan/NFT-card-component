@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--mainBG);
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  letter-spacing: 0.5px;
+}
+
+.d-flex {
+  display: flex;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.card {
+  width: 20rem;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 25px;
+  background-color: var(--cardBG);
+}
+.card-container {
+  color: var(--white);
+}
+.img-container {
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.custom-p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: var(--softBlue);
+}
+
+.between {
+  justify-content: space-between;
+  border-bottom: 1.5px solid var(--line);
+}
+
+.between svg {
+  margin-right: 7px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.align-items-center {
+  align-items: center;
+}
+.p-b {
+  padding-bottom: 15px;
+}
+.p-tb {
+  padding-top: 15px;
+}
+
+.soft-blue {
+  color: var(--softBlue);
+}
+.cyan {
+  color: var(--cyan);
+}
+.hover-cyan:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+.attribution {
+  color: var(--white);
+  margin-top: 10px;
+}
